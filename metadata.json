@@ -1,0 +1,6 @@
+{
+  "name": "Tira Nova · Earth-Mars Analog Matrix",
+  "description": "NASA Space Apps 2026 AeroHUD Telemetry Control analyzing Earth planetary analogs of Mars exploration sites.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

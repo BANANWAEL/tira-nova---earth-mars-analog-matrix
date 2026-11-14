@@ -1,0 +1,205 @@
+---
+name: AeroHUD Telemetry Control
+colors:
+  surface: '#0e131f'
+  surface-dim: '#0e131f'
+  surface-bright: '#343946'
+  surface-container-lowest: '#080e1a'
+  surface-container-low: '#161c28'
+  surface-container: '#1a202c'
+  surface-container-high: '#242a36'
+  surface-container-highest: '#2f3542'
+  on-surface: '#dde2f3'
+  on-surface-variant: '#bcc9cd'
+  inverse-surface: '#dde2f3'
+  inverse-on-surface: '#2b303d'
+  outline: '#869397'
+  outline-variant: '#3d494c'
+  surface-tint: '#4cd7f6'
+  primary: '#4cd7f6'
+  on-primary: '#003640'
+  primary-container: '#06b6d4'
+  on-primary-container: '#00424f'
+  inverse-primary: '#00687a'
+  secondary: '#ffb95f'
+  on-secondary: '#472a00'
+  secondary-container: '#ee9800'
+  on-secondary-container: '#5b3800'
+  tertiary: '#2fd9f4'
+  on-tertiary: '#00363e'
+  tertiary-container: '#00b7cf'
+  on-tertiary-container: '#00434d'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#acedff'
+  primary-fixed-dim: '#4cd7f6'
+  on-primary-fixed: '#001f26'
+  on-primary-fixed-variant: '#004e5c'
+  secondary-fixed: '#ffddb8'
+  secondary-fixed-dim: '#ffb95f'
+  on-secondary-fixed: '#2a1700'
+  on-secondary-fixed-variant: '#653e00'
+  tertiary-fixed: '#a2eeff'
+  tertiary-fixed-dim: '#2fd9f4'
+  on-tertiary-fixed: '#001f25'
+  on-tertiary-fixed-variant: '#004e5a'
+  background: '#0e131f'
+  on-background: '#dde2f3'
+  surface-variant: '#2f3542'
+typography:
+  headline-xl:
+    fontFamily: Space Grotesk
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+    letterSpacing: -0.02em
+  headline-xl-mobile:
+    fontFamily: Space Grotesk
+    fontSize: 30px
+    fontWeight: '700'
+    lineHeight: 38px
+    letterSpacing: -0.01em
+  headline-lg:
+    fontFamily: Space Grotesk
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 40px
+    letterSpacing: -0.01em
+  headline-lg-mobile:
+    fontFamily: Space Grotesk
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: 0em
+  headline-md:
+    fontFamily: Space Grotesk
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: 0em
+  title-md:
+    fontFamily: Space Grotesk
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 22px
+    letterSpacing: 0.04em
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 18px
+  label-md:
+    fontFamily: Space Grotesk
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.08em
+  label-sm:
+    fontFamily: Space Grotesk
+    fontSize: 10px
+    fontWeight: '700'
+    lineHeight: 14px
+    letterSpacing: 0.12em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-mobile: 0.75rem
+  margin: 2rem
+  margin-mobile: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+The design system embodies the high-stakes precision of orbital command centers, deep-space telemetry arrays, and advanced aerospace heads-up displays (HUDs). Designed for engineers, payload specialists, and mission operators, it prioritizes clarity in low-light environments, instantaneous signal recognition, and tactical calm under critical anomalies.
+
+The aesthetic fuses **Modern Technical Glassmorphism** with **Aerospace Instrument Minimalism**. Translucent frosted overlays simulate pressurized optical instrumentation without obstructing multi-layered telemetry streams. Crisp geometric titling pairs with high-legibility system typography to organize vast metric densities into readable flight tiers. The emotional posture is strictly professional, highly capable, and technologically uncompromising.
+
+## Colors
+
+The palette operates within a controlled deep-space radiance model:
+- **Base Canvas (`neutral_color_hex`: `#030712`)**: Deep obsidian base minimizing screen glare during prolonged observation shifts.
+- **Primary Radar & Vectors (`primary_color_hex`: `#06b6d4`)**: Electric cyan denoting operational paths, nominal telemetry states, active targeting locks, and verified telemetry uplinks.
+- **Secondary Caution & Warning (`secondary_color_hex`: `#f59e0b`)**: Tactical orbital amber deployed strictly for threshold alerts, sensor warnings, and delta-v throttles.
+- **Tertiary Accent (`tertiary_color_hex`: `#22d3ee`)**: Fluorescent cyan reserved for active radar sweeps, real-time focus rings, and high-frequency telemetry pulses.
+
+Layering follows strict luminescence hierarchy: deep matte backdrops support low-opacity glass panels (`rgba(255, 255, 255, 0.05)`), framed by subtle photon borders (`rgba(255, 255, 255, 0.15)`), while cyan and amber glows convey vital telemetry changes.
+
+## Typography
+
+Typography establishes systematic hierarchy between strategic overviews and granular sensor logs:
+- **Headlines (`Space Grotesk`)**: Geometric, technical, and forward-looking. Used for mission states, module titles, and critical waypoint classifications. All labels and callouts adopt uppercase tracking for quick scanning.
+- **Operational Copy & Readouts (`Inter`)**: Engineered for effortless legibility under dense informational payloads, tabular streams, and orbital coordinate feeds.
+- **Numbers and Vectors**: Numeric tables and telemetry streams should apply tabular figures (`font-variant-numeric: tabular-nums`) to prevent horizontal jitter during rapid real-time updates.
+
+## Layout & Spacing
+
+The layout operates on an instrumental 12-column fluid grid tailored for wide-format telemetry consoles and tactical mobile terminals:
+- **Desktop (>= 1280px)**: 12 columns with `margin: 2rem` and `gutter: 1rem`. High horizontal real estate houses concurrent telemetry streams, split-spectrum radars, and orbital path charts side-by-side.
+- **Tablet (768px - 1279px)**: 8 columns with `margin: 1.5rem` and `gutter: 1rem`. Sub-monitors collapse into unified scrollable stacks.
+- **Mobile (< 768px)**: 4 columns with `margin: 1rem` and `gutter: 0.75rem`. Non-critical radar monitors collapse into tabbed overlays to preserve vital mission trajectory logs.
+
+Component spacing follows a modular 4px base increment (`space-xs` through `space-xl`), ensuring compact layouts without sacrificing instrument delineation.
+
+## Elevation & Depth
+
+Visual hierarchy uses optical glassmorphism combined with tactical glow vectors rather than traditional drop shadows:
+
+- **Surface Level 0 (Deep Canvas)**: Solid `#030712` base.
+- **Surface Level 1 (Tactical Console Modules)**: Translucent glass layers (`background: rgba(255, 255, 255, 0.04)`) with hardware-accelerated backdrop blur (`backdrop-filter: blur(20px)`), reinforced by structural ghost borders (`border: 1px solid rgba(255, 255, 255, 0.12)`).
+- **Surface Level 2 (Floating Pods & Popovers)**: Enhanced optical density (`background: rgba(15, 23, 42, 0.75)` with `backdrop-filter: blur(24px)`), framed by ambient cyan radiation (`box-shadow: 0 0 20px -5px rgba(6, 182, 212, 0.25)`).
+- **Surface Level 3 (Emergency Overlays & Intercept Modals)**: Border-accented glass with high-intensity vector highlights (`box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.35)` when cautionary).
+
+## Shapes
+
+The design uses soft, precision-machined geometry (`roundedness: 1`). Core UI cards and instrument enclosures feature minimal 0.25rem (`4px`) radii, providing subtle structural softening while maintaining the clean silhouette of aviation monitors. Floating action panels utilize `0.5rem` (`rounded-lg`), while status pills and analog telemetry tags scale to `0.75rem` (`rounded-xl`).
+
+## Components
+
+### Buttons & Tactical Triggers
+- **Primary Telemetry Trigger**: Filled with radiant cyan (`#06b6d4`), text set in dark obsidian (`#030712`) using `Space Grotesk` Bold with subtle cyan backglow (`box-shadow: 0 0 16px rgba(6, 182, 212, 0.4)`).
+- **Ghost/Auxiliary Action**: Translucent glass (`rgba(255, 255, 255, 0.05)`) with crisp borders (`1px solid rgba(6, 182, 212, 0.4)`). Hover states elevate border brightness to `#22d3ee` and text to `#ffffff`.
+- **Warning/Abort Action**: Deep crimson-tinted glass accented with vibrant amber borders (`#f59e0b`), accompanied by an outer warning glow.
+
+### Chips & Telemetry Badges
+- Precision micro-containers with uppercase labels (`label-sm`).
+- **Nominal Signal**: Translucent cyan background (`rgba(6, 182, 212, 0.12)`) with a solid cyan stroke (`rgba(6, 182, 212, 0.4)`) and glowing status dot.
+- **Planetary Analog Indicator**: Minimal pill format displaying target gravitational and atmospheric metrics with muted mono data points.
+
+### Radar & Circular Scanners
+- Concentric HUD rings rendered with fine lines (`rgba(6, 182, 212, 0.2)`).
+- Dynamic radial sweep using conical cyan gradients (`rgba(34, 211, 238, 0.25)` to transparent). Target blips marked by expanding ping animations.
+
+### Input Fields & Command Prompts
+- Low-profile structural fields (`rgba(255, 255, 255, 0.03)`) with `1px solid rgba(255, 255, 255, 0.15)` borders.
+- On focus: Borders shift to `#06b6d4` with an inner glow (`box-shadow: inset 0 0 8px rgba(6, 182, 212, 0.2)`). Labels rest above inputs in uppercase `label-md`.
+
+### Cards & Module Panels
+- Wrapped in backdrop-blur glass (`rgba(255, 255, 255, 0.04)`) with corner indexing cues (tactical crosshairs or micro-bracket accents along panel corners).
+- Segmented headers bordered by a fine separator line (`rgba(255, 255, 255, 0.08)`), pairing a module status dot with a `title-md` header.
+
+### Checkboxes & Toggle Switches
+- Checkboxes maintain a square silhouette with chamfered edges; selected states illuminate in `#06b6d4`.
+- Track toggles utilize deep-space obsidian troughs framed by fine borders; active toggles slide a glowing cyan nodule into position.
