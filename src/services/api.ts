@@ -21,7 +21,7 @@ import {
 } from '../lib/types';
 
 export const API_BASE_URL = (
-  import.meta.env.VITE_API_URL || 'https://your-backend-url.onrender.com'
+  import.meta.env.VITE_API_URL || 'https://tiraapifinal-production.up.railway.app'
 ).replace(/\/+$/, '');
 
 export function isPlaceholderApiUrl(): boolean {
