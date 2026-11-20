@@ -128,26 +128,30 @@ export const TelemetryDeltaCards: React.FC<TelemetryDeltaCardsProps> = ({
       )}
 
       {/* Metric 4: Confidence & Rank Stability */}
-      <div className="p-3.5 rounded-md bg-[#0e131f]/80 border border-amber-500/25 backdrop-blur-md shadow-[0_0_15px_rgba(245,158,11,0.08)] transition-all duration-300 hover:border-amber-400/60 hover:shadow-[0_0_20px_rgba(245,158,11,0.2)] hover:-translate-y-0.5">
-        <div className="text-[11px] font-mono uppercase tracking-wider text-amber-400 flex items-center justify-between gap-1">
-          <span>{t.deltaCards.confidenceTier}</span>
-          <span className="uppercase text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold">
-            {localizedConfidence}
-          </span>
-        </div>
-        <div className="mt-1 flex items-baseline gap-1.5">
-          <span className="text-2xl font-bold font-mono text-white tabular-nums ltr-num">
-            {rankStability}%
-          </span>
-          <span className="text-xs font-mono text-slate-400">{t.deltaCards.bootstrapStability}</span>
-        </div>
-        <div className="mt-2 text-[11px] font-mono text-slate-400 flex items-center justify-between gap-1">
-          <span>
-            <strong className="ltr-num">{candidatesCount}</strong> {t.deltaCards.candidatesInRange}
-          </span>
-          <span className="text-amber-300">{t.deltaCards.calibrated}</span>
-        </div>
-      </div>
+      <div className="min-w-0 overflow-hidden p-3.5 rounded-md bg-[#0e131f]/80 border border-amber-500/25 backdrop-blur-md shadow-[0_0_15px_rgba(245,158,11,0.08)] transition-all duration-300 hover:border-amber-400/60 hover:shadow-[0_0_20px_rgba(245,158,11,0.2)] hover:-translate-y-0.5">
+  <div className="text-[11px] font-mono uppercase tracking-wider text-amber-400 flex flex-wrap items-center justify-between gap-1.5">
+    <span className="min-w-0 wrap-break-word">{t.deltaCards.confidenceTier}</span>
+    <span className="shrink-0 uppercase text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold">
+      {localizedConfidence}
+    </span>
+  </div>
+
+  <div className="mt-1 flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
+    <span className="text-2xl font-bold font-mono text-white tabular-nums ltr-num shrink-0">
+      {rankStability}%
+    </span>
+    <span className="text-xs font-mono text-slate-400 min-w-0 wrap-break-word leading-snug">
+      {t.deltaCards.bootstrapStability}
+    </span>
+  </div>
+
+  <div className="mt-2 text-[11px] font-mono text-slate-400 flex flex-wrap items-center justify-between gap-1.5">
+    <span className="min-w-0 wrap-break-word">
+      <strong className="ltr-num">{candidatesCount}</strong> {t.deltaCards.candidatesInRange}
+    </span>
+    <span className="text-amber-300 shrink-0">{t.deltaCards.calibrated}</span>
+  </div>
+</div>
     </div>
   );
 };
